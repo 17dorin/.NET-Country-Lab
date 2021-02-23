@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Country>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form method="post">
+    <select id="counts" name="counts" size="3">
+        <option value="usa">Usa</option>
+        <option value="mexico">Mexico</option>
+        <option value="germany">Germany</option>
+    </select>
+    <input type="submit"/>
+</form>

@@ -1,0 +1,17 @@
+﻿@{
+    if (TempData.ContainsKey("name"))
+    {
+        <p>Name: @TempData.Peek("name")</p>
+        <p>Language: @TempData.Peek("language")</p>
+        <p>Greeting: @TempData.Peek("greeting")</p>
+        <p>Colors: </p>
+        foreach(string c in (string[]) TempData.Peek("colors"))
+        {
+            <p>@c</p>
+        }
+    }
+    else
+    {
+        <p>No country selected</p>
+    }
+}
